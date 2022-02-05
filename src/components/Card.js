@@ -19,7 +19,7 @@ const Card = ({ product, children }) => {
         <Grid item xs={3}>
             <Paper className={classes.paper}>
                 <Grid container direction='column'>
-                    <Grid item>
+                    <Grid item style={{height: "240px"}}>
                     <img width="140px" src={product.image} alt={product.name_product}/>
                     <Typography variant='h6'>
                         {children}

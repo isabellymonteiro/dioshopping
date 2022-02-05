@@ -5,15 +5,15 @@ import Cart from './Cart';
 
 const Header = () => {
     return(
-        <Grid container direction="row" justify="space-between" alignItems="center" xs={12}>
+        <Grid container direction="row" justify="space-between" alignItems="center" xs={12} style={{marginTop: '10px'}}>
             <Typography variant='h3'>
                 Dio Shopping
             </Typography>
-            <Link to="/">
-                <Button color="primary">Home</Button>
+            <Link to="/" style={{textDecoration: 'none'}}>
+                <Button color="default">Home</Button>
             </Link>
-            <Link to="/contato">
-                <Button color="primary">Contato</Button>
+            <Link to="/contato" style={{textDecoration: 'none'}}>
+                <Button color="default">Contato</Button>
             </Link>
             <Cart />   
 
